@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offline e-commerce</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/jquery.validate.js"></script>
+    <script src="scripts/admin.js"></script>
+  </head>
+  <body>
+    <nav class="navigationbar">
+      <span class="brand">Dried Fish.com</span>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="buyproducts.html">Buy Product</a></li>
+        <li><a href="admin.html" id="admin">Admin</a></li>
+        <li><a href="cart.html" id="cart"><i class="fa fa-shopping-cart"></i> <span id="count">0</span> items</a></li>
+        <li><a href="login-register.html" id="login">Login/Register</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <div class="c1-1">
+        <div>
+          <h3>Products</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>description</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Product</h3>
+          <form id="frm-product">
+            <div class="c1">
+              <input placeholder="name..." id="name" class="input" required />
+            </div>
+            <div class="c1">
+              <input
+                type="number"
+                placeholder="price..."
+                id="price"
+                class="input"
+                required
+              />
+            </div>
+            <div class="c1">
+              <input
+                placeholder="description..."
+                id="description"
+                class="input"
+                required
+              />
+            </div>
+            <div class="c1">
+              <input
+                type="file"
+                placeholder="description..."
+                id="picture"
+                class="input"
+                required
+              />
+            </div>
+            <div class="c1">
+              <button
+                type="reset"
+                class="btn-primary"
+                type="button"
+                id="reset-btn"
+              >
+                Reset
+              </button>
+              <button class="btn-primary" type="button" id="save-btn">
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
